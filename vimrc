@@ -13,6 +13,7 @@ Bundle 'tomasr/molokai'
 Bundle 'nvie/vim-flake8'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'VimClojure'
 
 syntax on
 filetype plugin on
