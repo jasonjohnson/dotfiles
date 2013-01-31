@@ -23,6 +23,8 @@ autocmd BufWritePost *.py call Flake8()
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=0
 
+set number
+
 set nobackup
 set nowritebackup
 set noswapfile
@@ -34,7 +36,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-set number
 set wildmenu
 set wildmode=list:longest,full 
 set ruler
@@ -46,3 +47,13 @@ silent! colorscheme molokai
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
+
+let mapleader=","
+
+map <leader><leader> :source ~/.vimrc<cr>
+map <leader>t        :NERDTreeToggle<cr>
+map <leader>b        :TagbarToggle<cr>
+map <leader>s        :w<cr>
+map <leader>e        :e ~/Projects/
+map <leader>-        :vertical resize -10<cr>
+map <leader>+        :vertical resize +10<cr>
