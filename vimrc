@@ -42,7 +42,7 @@ set laststatus=2
 set textwidth=80
 set colorcolumn=+1
 
-colorscheme molokai
+silent! colorscheme molokai
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
