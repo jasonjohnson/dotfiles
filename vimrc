@@ -21,7 +21,7 @@ filetype indent on
 
 autocmd BufWritePost *.py call Flake8()
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=0
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 set number
 
@@ -42,6 +42,10 @@ set ruler
 set laststatus=2
 set textwidth=80
 set colorcolumn=+1
+
+if has("gui_running")
+  set guifont=Ubuntu\ Mono\ 10
+endif
 
 silent! colorscheme molokai
 
