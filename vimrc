@@ -20,6 +20,7 @@ filetype plugin on
 filetype indent on
 
 autocmd BufWritePost *.py call Flake8()
+let NERDTreeIgnore = ['\.pyc$']
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 
@@ -44,6 +45,7 @@ set textwidth=80
 set colorcolumn=+1
 
 if has("gui_running")
+  set guioptions-=T
   set guifont=Ubuntu\ Mono\ 10
 endif
 
